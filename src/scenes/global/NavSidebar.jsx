@@ -15,7 +15,8 @@ import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutl
 import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
-import 'react-pro-sidebar/dist/css/styles.css'
+import AttachMoneyOutlinedIcon from "@mui/icons-material/AttachMoneyOutlined";
+import "react-pro-sidebar/dist/css/styles.css";
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
@@ -214,6 +215,13 @@ const NavSidebar = () => {
               title={"Geography Chart"}
               to={"/geography"}
               icon={<MapOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title={"Finance Department"}
+              to={"/finance"}
+              icon={<AttachMoneyOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
